@@ -1,0 +1,187 @@
+/* Importação das fontes */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* Configurações iniciais */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+/*Configurações do menu */
+
+nav {
+    position: fixed;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 1rem;
+    /* z-index: 1000; */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    font-size: 1rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #e67e22;
+}
+
+/*Configurações do Hero */
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(87, 75, 75, 0.5)), url('https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    animation: fadeIn 5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/*Seção de promoções*/
+
+.promocoes {
+    padding: 5rem 2rem;
+    background: #f9f9f9;
+}
+
+.promocoes h2 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 3rem;
+}
+
+.promo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.promo-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* seção departamentos */
+
+.departamentos {
+    padding: 5rem 2rem;
+    background: white;
+}
+
+.dept-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 3rem;
+}
+
+.dept-botoes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.dept-btn {
+    background: #e67e22;
+    color: white;
+    padding: 2rem;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(230, 126, 34, 0.2);
+}
+
+.dept-btn:hover {
+    transform: translateY(-5px);
+    background: #d35400;
+    box-shadow: 0 6px 20px rgba(230, 126, 34, 0.3);
+}
+
+.dept-btn:active {
+    transform: translateY(-2px);
+}
+
+.dept-imagens {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.dept-imagens img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* seção historia */
+
+.historia {
+    padding: 5rem 2rem;
+    background: #f9f9f9;
+}
+
+.history-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* rodape */
+
+.rodape {
+    background: #2c3e50;
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.logo {
+    width: 150px;
+    margin-bottom: 2rem;
+}
+
